@@ -12,3 +12,32 @@ GET http://localhost:3000/contacts/63c2f014ed441b9ce9f2839f HTTP/1.1
 GET https://kaylene341-personal-2.onrender.com/contacts/allcontacts HTTP/1.1
 ###
 GET https://kaylene341-personal-2.onrender.com/contacts/63c2f014ed441b9ce9f2839f HTTP/1.1
+###
+
+//PA 3 REQUESTS 
+POST http://localhost:3000/contacts/new HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Emily",
+    "lastName": "Lamb",
+    "email": "emlam@email.com",
+    "favoriteColor": "Green",
+    "birthday": "Aug 15"
+}
+###
+
+PUT http://localhost:3000/contacts/63cb0a03e29ca6192ba57257 HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Ryan",
+    "LastName": "Buchanan",
+    "email": "rpb@mail.com",
+    "favoriteColor": "orange",
+    "birthday": "April 10"
+}
+###
+
+DELETE http://localhost:3000/contacts/63cb0aabe29ca6192ba57258 HTTP/1.1
+
