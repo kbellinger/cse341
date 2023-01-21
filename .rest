@@ -9,9 +9,9 @@ GET http://localhost:3000/contacts/allcontacts HTTP/1.1
 ###
 GET http://localhost:3000/contacts/63c2f014ed441b9ce9f2839f HTTP/1.1
 ###
-GET https://kaylene341-personal-2.onrender.com/contacts/allcontacts HTTP/1.1
+GET https://kaylene-personal-2.onrender.com/contacts/allcontacts HTTP/1.1
 ###
-GET https://kaylene341-personal-2.onrender.com/contacts/63c2f014ed441b9ce9f2839f HTTP/1.1
+GET https://kaylene-personal-2.onrender.com/contacts/63c2f014ed441b9ce9f2839f HTTP/1.1
 ###
 
 //PA 3 REQUESTS 
@@ -26,7 +26,6 @@ content-type: application/json
     "birthday": "Aug 15"
 }
 ###
-
 PUT http://localhost:3000/contacts/63cb0a03e29ca6192ba57257 HTTP/1.1
 Content-Type: application/json
 
@@ -38,6 +37,30 @@ Content-Type: application/json
     "birthday": "April 10"
 }
 ###
-
 DELETE http://localhost:3000/contacts/63cb0aabe29ca6192ba57258 HTTP/1.1
 
+//PA 3 Production
+###
+POST https://kaylene341-personal-1.onrender.com/contacts/new HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Parker",
+    "lastName": "Ranger",
+    "email": "parkranger@email.com",
+    "favoriteColor": "red",
+    "birthday": "Jul 26"
+}
+###
+PUT https://kaylene341-personal-1.onrender.com/contacts/63cb0a03e29ca6192ba57257 HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Ryan",
+    "LastName": "Buchanan",
+    "email": "rpb@mail.com",
+    "favoriteColor": "orange",
+    "birthday": "Apr 10"
+}
+###
+DELETE https://kaylene341-personal-1.onrender.com/contacts/63cb0aabe29ca6192ba57258 HTTP/1.1
