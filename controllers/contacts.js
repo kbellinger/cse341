@@ -53,7 +53,7 @@ const deleteContact = async (req, res) => {
     .collection('contacts')
     .deleteOne({ _id: contactId });
   if (result.deletedCount != 0) {
-    res.status(200).send(contactId + 'has been deleted');
+    res.status(200).send(contactId + ' has been deleted');
   } else {
     res.status(500).send('there was an error');
   }

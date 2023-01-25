@@ -1,7 +1,7 @@
 // PA 1 GET requests
-GET http://localhost:3000/url HTTP/1.1
-###
-GET https://kaylene341-personal-1.onrender.com/url HTTP/1.1
+# GET http://localhost:3000/url HTTP/1.1
+# ###
+# GET https://kaylene341-personal-1.onrender.com/url HTTP/1.1
 ###
 
 //PA 2 GET requests
